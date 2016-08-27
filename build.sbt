@@ -4,8 +4,6 @@ version := "1.0"
 
 scalaVersion := "2.11.8"
 
-EclipseKeys.withSource := true
-
 val sourceMainDirs = Seq(
   "src/main/java",
   "src/main/scala",

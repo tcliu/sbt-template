@@ -1,8 +1,12 @@
 /target/
 /project/
 /bin/
-.idea/
-.settings/
-.classpath
-*.iml
+/.idea/
+/.settings/
+/.classpath
+/.project
+/*.iml
 *.log*
+src/main/java/
+src/main/resources/
+src/test/
