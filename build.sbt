@@ -19,12 +19,12 @@ def initSourceDirs(project: Project) : Project = {
     "src/test/scala",
     "src/test/resources"
   )
-  (sourceMainDirs ++ sourceTestDirs).map(new File(project.base, _)).foreach(_.mkdirs)
+  (sourceMainDirs ++ sourceTestDirs).map(new File(project.base.getAbsoluteFile, _)).foreach(_.mkdirs)
   project
 }
 
 lazy val runtimeDependencies = Seq(
-  "org.springframework" % "spring-core" % "4.3.2.RELEASE",
+  "org.springframework" % "spring-core" % "4.3.3.RELEASE",
   "org.apache.commons" % "commons-lang3" % "3.4",
   "org.slf4j" % "slf4j-api" % "1.7.21",
   "ch.qos.logback" % "logback-classic" % "1.1.7" % Runtime
