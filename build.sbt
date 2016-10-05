@@ -27,7 +27,9 @@ lazy val runtimeDependencies = Seq(
   "org.springframework" % "spring-core" % "4.3.3.RELEASE",
   "org.apache.commons" % "commons-lang3" % "3.4",
   "org.slf4j" % "slf4j-api" % "1.7.21",
-  "ch.qos.logback" % "logback-classic" % "1.1.7" % Runtime
+  "org.apache.logging.log4j" % "log4j-api" % "2.6.2" % Runtime,
+  "org.apache.logging.log4j" % "log4j-core" % "2.6.2" % Runtime,
+  "org.apache.logging.log4j" % "log4j-slf4j-impl" % "2.6.2" % Runtime
 )
 
 lazy val testDependencies = Seq(
